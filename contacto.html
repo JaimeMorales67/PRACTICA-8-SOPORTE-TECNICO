@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--JAIME OMAR MORALES REYNOSO-->
+    <meta charset="UTF-8">
+    <title>Practica 8</title>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Soporte Técnico y Mantenimiento</h1>
+        <p><b>Practica 8 </b></p>
+        <hr>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="index.html">Inicio</a> | 
+        <a href="dispositivos.html">Dispositivos</a> | 
+        <a href="contacto.html">Contacto</a>
+        <hr>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main>
+        <h3>Formulario de solicitud de mantenimiento</h3>
+
+        <form action="https://formsubmit.co/a.24308051280877@cbtis128.edu.mx" method="POST">
+            
+            <!-- Configuraciones para el envío directo por correo -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Nueva solicitud de mantenimiento - Practica 8">
+
+            <table cellpadding="5">
+                <tr>
+                    <td><label for="nombre">Nombre completo:</label></td>
+                    <td><input type="text" id="nombre" name="Nombre completo" placeholder="Tu nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="correo">Correo electrónico:</label></td>
+                    <td><input type="email" id="correo" name="Correo electrónico" placeholder="tu_correo@ejemplo.com" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Teléfono / WhatsApp:</label></td>
+                    <td><input type="tel" id="telefono" name="Teléfono / WhatsApp" placeholder="Ej. 6561234567" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dispositivo">Tipo de dispositivo:</label></td>
+                    <td>
+                        <select id="dispositivo" name="Tipo de dispositivo" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option value="Laptop">Laptop</option>
+                            <option value="PC">PC</option>
+                            <option value="Celular">Celular</option>
+                            <option value="Tablet">Tablet</option>
+                            <option value="Impresora">Impresora</option>
+                            <option value="Consola">Consola</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="marca_modelo">Marca y modelo:</label></td>
+                    <td><input type="text" id="marca_modelo" name="Marca y modelo" placeholder="Ej. HP Pavilion 15" required></td>
+                </tr>
+                <tr>
+                    <td valign="top"><label>Tipo de servicio:</label></td>
+                    <td>
+                        <input type="radio" id="mantenimiento" name="Tipo de servicio" value="Mantenimiento preventivo" required>
+                        <label for="mantenimiento">Mantenimiento preventivo</label><br>
+                        
+                        <input type="radio" id="reparacion" name="Tipo de servicio" value="Reparación">
+                        <label for="reparacion">Reparación</label><br>
+                        
+                        <input type="radio" id="diagnostico" name="Tipo de servicio" value="Diagnóstico">
+                        <label for="diagnostico">Diagnóstico</label><br>
+                        
+                        <input type="radio" id="limpieza" name="Tipo de servicio" value="Limpieza">
+                        <label for="limpieza">Limpieza</label><br>
+                        
+                        <input type="radio" id="componente" name="Tipo de servicio" value="Cambio de componente">
+                        <label for="componente">Cambio de componente</label><br>
+                        
+                        <input type="radio" id="configuracion" name="Tipo de servicio" value="Instalación/configuración">
+                        <label for="configuracion">Instalación/configuración</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="mensaje">Descripción del problema:</label></td>
+                    <td><textarea id="mensaje" name="Descripción del problema" rows="4" cols="35" placeholder="Describe qué sucede con tu dispositivo..." required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="inicio_problema">¿Cuándo comenzó el problema?</label></td>
+                    <td>
+                        <select id="inicio_problema" name="¿Cuándo comenzó el problema?" required>
+                            <option value="">-- Seleccionar --</option>
+                            <option value="Hoy">Hoy</option>
+                            <option value="Hace pocos días">Hace pocos días</option>
+                            <option value="Hace una semana">Hace una semana</option>
+                            <option value="Hace más de un mes">Hace más de un mes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top"><label>Método de contacto preferido:</label></td>
+                    <td>
+                        <input type="radio" id="contacto_whatsapp" name="Método de contacto preferido" value="WhatsApp" required>
+                        <label for="contacto_whatsapp">WhatsApp</label><br>
+                        
+                        <input type="radio" id="contacto_telefono" name="Método de contacto preferido" value="Teléfono">
+                        <label for="contacto_telefono">Teléfono</label><br>
+                        
+                        <input type="radio" id="contacto_correo" name="Método de contacto preferido" value="Correo">
+                        <label for="contacto_correo">Correo</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br>
+                        <button type="submit">Solicitar diagnóstico</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </main>
+
+    <br><hr>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p><b>Alumno:</b> JAIME OMAR MORALES REYNOSO | <b>Grupo:</b> 5-J | <b>No de control:</b> 0877</p>
+    </footer>
+
+</body>
+</html>
